@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-lang-pg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murhussain/tailwind-lang-pg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murhussain/tailwind-lang-pg/issues"
+  },
+  "homepage": "https://github.com/murhussain/tailwind-lang-pg#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
