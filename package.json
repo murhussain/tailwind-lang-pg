@@ -17,7 +17,7 @@
     "url": "https://github.com/murhussain/tailwind-lang-pg/issues"
   },
   "homepage": "https://github.com/murhussain/tailwind-lang-pg#readme",
-  "dependencies": {
+  "devDependencies": {
     "tailwindcss": "^3.2.7"
   }
 }
