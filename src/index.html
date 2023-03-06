@@ -1,13 +1,53 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body class="bg-green-400">
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+  </head>
+  <body class="h-screen bg-body snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
+
+    <!-- HEADER SECTION OF THE PAGE -->
+      <header class="bg-white sticky top-0 p-4 z-20 shadow-md">
+        <div class="max-w-6xl mx-auto flex items-start justify-between xl:items-center">
+          <div class="flex items-center space-x-10">
+            <img
+              class='h-6 w-26' 
+              src="/img/logo.png" 
+              alt="Logo"
+            >
+            <p class='text-gray-accent'>About</p>
+            <p class='text-gray-accent'>Service</p>
+            <p class='text-gray-accent'>Source</p>
+            <p class='text-gray-accent'>Study Case</p>
+          </div>
+          <div class="flex items-center space-x-10">
+            <p class='text-primary font-semibold'>Log In</p>
+            <button class="text-white bg-primary px-6 py-1 rounded-md">Contact</button>
+          </div>
+        </div>
+      </header>
+    <!-- END HEADER SECTION -->
+
+    <!-- HERO SECTION OF THE PAGE -->
+      <section id='hero' class='snap-center'>
+        <div class='bg-white h-screen max-w-6xl mx-auto flex items-center justify-between'>
+          <div class="flex flex-col space-y-4">
+            <div class="space-y-2">
+              <p class="text-6xl tracking-wide capitalize font-semibold">Make your</p>
+              <p class="text-6xl tracking-wide text-primary capitalize font-semibold">SEO Campaign</p>
+              <p class="text-6xl tracking-wide capitalize font-semibold">Successful</p>
+            </div>
+            <p class='text-lg '>
+              Get organic traffic and high rankings with multi-team collaboration that will help
+              you optimize on-page and off-page SEO.
+            </p>
+          </div>
+          <div>
+            <div class="border-2 border-dashed-gray-accent h-[40vh] w-[20vw]"></div>
+          </div>
+        </div>
+      </section>
+    <!-- END HERO SECTION -->
+  </body>
 </html>
