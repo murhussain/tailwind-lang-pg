@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+  .small-p {
+    @apply text-[11px] text-gray-accent capitalize;
+  }
+}
