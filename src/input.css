@@ -9,3 +9,9 @@
     @apply text-[11px] text-gray-accent capitalize;
   }
 }
+
+.featured {
+  height: 2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}

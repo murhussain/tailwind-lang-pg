@@ -7,6 +7,7 @@ module.exports = {
         'body': '#f6f6f6',
         'black': '#0d0103',
         'accent-black': '#3d3435',
+        'accent-black2': '#645d5d',
         'hero-body': '#f3e7e9',
         'gray': '#c5c5c5',
         'gray-accent': '#989898',
