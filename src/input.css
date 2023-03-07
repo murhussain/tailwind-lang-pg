@@ -8,6 +8,10 @@
   .small-p {
     @apply text-[11px] text-gray-accent capitalize;
   }
+
+  .about-divs {
+    @apply h-64 w-1/3 p-8 bg-white rounded-2xl flex flex-col space-y-5 shadow-md
+  }
 }
 
 .featured {

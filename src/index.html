@@ -8,29 +8,29 @@
   <body class="h-screen bg-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
 
     <!-- HEADER SECTION OF THE PAGE -->
-      <header class="sticky top-0 z-50 shadow-md">
-        <div class="max-w-6xl mx-auto py-4 flex items-start justify-between xl:items-center z-50 bg-white">
-          <div class="flex items-center space-x-10">
-            <img
-              class='h-5 w-26' 
-              src="/img/tinder.png" 
-              alt="Logo"
-            >
-            <p class='text-gray-accent'>About</p>
-            <p class='text-gray-accent'>Service</p>
-            <p class='text-gray-accent'>Source</p>
-            <p class='text-gray-accent'>Study Case</p>
-          </div>
-          <div class="flex items-center space-x-10">
-            <p class='text-primary font-semibold'>Log In</p>
-            <button class="text-white bg-primary px-6 py-1 rounded-md">Contact</button>
-          </div>
+    <header class="sticky top-0 z-50 shadow-md">
+      <div class="max-w-6xl mx-auto py-4 flex items-start justify-between xl:items-center z-50 bg-white">
+        <div class="flex items-center space-x-10">
+          <img
+            class='h-5 w-26' 
+            src="/img/tinder.png" 
+            alt="Logo"
+          >
+          <p class='text-gray-accent'>About</p>
+          <p class='text-gray-accent'>Service</p>
+          <p class='text-gray-accent'>Source</p>
+          <p class='text-gray-accent'>Study Case</p>
         </div>
-      </header>
-    <!-- END HEADER SECTION -->
+        <div class="flex items-center space-x-10">
+          <p class='text-primary font-semibold'>Log In</p>
+          <button class="text-white bg-primary px-6 py-1 rounded-md">Contact</button>
+        </div>
+      </div>
+    </header> <!-- END HEADER SECTION -->
 
-    <!-- HERO SECTION OF THE PAGE -->
-      <section id='hero' class='snap-center pt-28'>
+    <main class='flex flex-col space-y-20'>
+      <!-- HERO SECTION OF THE PAGE -->
+      <section id='hero' class='snap-start pt-28'>
         <div class='max-w-6xl mx-auto flex flex-col space-y-10'>
           <div class="flex items-center justify-between">
 
@@ -56,7 +56,7 @@
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-                    <div class="flex flex-col justify-center items-center h-8 w-8 rounded-full ring-2 ring-white bg-hero-body">
+                    <div class="flex flex-col justify-center items-center h-8 w-8 rounded-full ring-2 ring-white bg-body">
                       <p class="text-xs text-primary font-medium">+2.4</p>
                     </div>
                   </div>
@@ -69,7 +69,7 @@
               <div class="relative h-[65vh] w-[30vw]">
                 <!-- DASHED DIV CODES -->
                 <div class="absolute -top-8 right-10 w-full h-full border-dashed border-2 
-                border-gray z-10 rounded-3xl -rotate-12"></div> <!-- DASHED DIV END -->
+                border-gray z-10 rounded-[2.5rem] -rotate-12"></div> <!-- DASHED DIV END -->
   
                 <!-- SHOES CARD START -->
                 <div class="absolute top-[4.5rem] -right-[6rem] p-2 bg-white z-20 shadow-2xl rounded-md">
@@ -150,7 +150,7 @@
                   </div>
                 </div> <!-- SEARCH ENGINE END -->
                 <!-- DIV WITH IMAGE -->
-                <div class="absolute bottom-0 left-0 w-full h-full bg-hero-body rounded-3xl z-10">
+                <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-body to-accent-body  rounded-[2.5rem] z-10">
                   <img src="/img/hero1.png" alt="Your image" class="w-full h-full object-fill">
                 </div> <!-- END OF DIV WITH IMAGE -->
               </div>
@@ -169,7 +169,67 @@
             <img src="/img/usa-today.png" alt="USA Today logo" class="featured"/>
           </div> <!-- END FEATURED -->
         </div>
-      </section>
-    <!-- END HERO SECTION -->
+      </section> <!-- END HERO SECTION -->
+
+      <!-- ABOUT SECTION -->
+      <section id='hero' class='snap-center'>
+        <div class='h-[85vh] bg-gradient-to-r from-body to-accent-body max-w-6xl mx-auto flex flex-col space-y-16 p-10 rounded-[2.5rem]'>
+          <div class="space-y-3">
+            <p class="text-5xl text-center text-black capitalize font-medium">
+              Why starch is your best choice
+            </p>
+            <p class="text-5xl text-center text-black capitalize font-medium">
+              to increase your website
+            </p>
+            <div class="space-y-1">
+              <p class="text-base text-center text-accent-black2 tracking-wide">
+                Starch is a reliable and affordable website building tool that
+              </p>
+              <p class="text-base text-center text-accent-black2 tracking-wide">
+                can help you create a strong presence and reach more
+              </p>
+            </div>
+          </div>
+          <div class='w-full flex items-end space-x-4'>
+            <div class="about-divs">
+              <div class="grid place-content-center h-16 w-16 p-2 bg-body rounded-xl">
+                <img src="/img/bar-chart.svg" alt="Image 1" class="h-10 w-10">
+              </div>
+              <p class="text-black text-left font-semibold capitalize">Deep & comprehensive</p>
+              <p class="text-sm text-accent-black2 text-left leading-snug">
+                <span class="whitespace-nowrap">Presentation of in-depth and</span><br>
+                <span class="whitespace-nowrap">comprehensive analysis is our</span><br>
+                <span class="whitespace-nowrap">expertise. We will present the analysis</span><br>
+                <span class="whitespace-nowrap">in a way that is easy to understand.</span><br>
+              </p>
+            </div>
+            <div class="about-divs">
+              <div class="grid place-content-center h-16 w-16 p-2 bg-body rounded-xl">
+                <img src="/img/search.svg" alt="Image 1" class="h-10 w-10">
+              </div>
+              <p class="text-black text-left font-semibold capitalize">SEO centric company</p>
+              <p class="text-sm text-accent-black2 text-left leading-snug">
+                <span class="whitespace-nowrap">Starch is an SEO-Centric company</span><br>
+                <span class="whitespace-nowrap">focused on helping businesses to</span><br>
+                <span class="whitespace-nowrap">improve their SEO. Every client will get</span><br>
+                <span class="whitespace-nowrap">end-to-end service.</span><br>
+              </p>
+            </div>
+            <div class="about-divs">
+              <div class="grid place-content-center h-16 w-16 p-2 bg-body rounded-xl">
+                <img src="/img/paste.svg" alt="Image 1" class="h-10 w-10">
+              </div>
+              <p class="text-black text-left font-semibold capitalize">Localized SEO</p>
+              <p class="text-sm text-accent-black2 text-left leading-snug">
+                <span class="whitespace-nowrap">Every business is unique, and so is our</span><br>
+                <span class="whitespace-nowrap">approach. Localized SEO offers a more</span><br>
+                <span class="whitespace-nowrap">effective strategy to reach the right</span><br>
+                <span class="whitespace-nowrap">target market.</span><br>
+              </p>
+            </div>         
+          </div>
+        </div>
+      </section> <!-- END ABOUT SECTION -->
+    </main>
   </body>
 </html>

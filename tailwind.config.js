@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'body': '#f6f6f6',
+        'body': '#f3e7e9',
+        'accent-body': '#dbb6bd',
         'black': '#0d0103',
         'accent-black': '#3d3435',
         'accent-black2': '#645d5d',
-        'hero-body': '#f3e7e9',
         'gray': '#c5c5c5',
         'gray-accent': '#989898',
         'primary': '#870D22',
