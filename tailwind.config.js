@@ -4,15 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'body': '#f3e7e9',
-        'accent-body': '#dbb6bd',
+        'body': '#f9edea',
+        'accent-body': '#ecc9c0',
         'black': '#0d0103',
         'accent-black': '#3d3435',
         'accent-black2': '#645d5d',
         'gray': '#c5c5c5',
         'gray-accent': '#989898',
-        'primary': '#870D22',
-        'accent': '#9f3d4e',
+        'primary': '#bf4c2c',
+        'accent': '#cc7056',
       }
     },
   },
