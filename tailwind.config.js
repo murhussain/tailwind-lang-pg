@@ -12,6 +12,7 @@ module.exports = {
         'gray': '#c5c5c5',
         'gray-accent': '#989898',
         'primary': '#870D22',
+        'accent': '#9f3d4e',
       }
     },
   },
