@@ -16,6 +16,10 @@
   .about-divs2 {
     @apply h-[22rem] w-[28.7%] bg-white rounded-2xl flex flex-col space-y-8
   }
+
+  .scale {
+    @apply hover:scale-y-110 hover:shadow-md transition-all duration-150 ease-out
+  }
 }
 
 .featured {

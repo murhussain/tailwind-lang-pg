@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
   </head>
-  <body class="h-screen bg-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
+  <body class="bg-white snap-y snap-mandatory space-y-10 overflow-y-scroll overflow-x-hidden">
 
     <!-- HEADER SECTION OF THE PAGE -->
-    <header class="sticky top-0 z-50 shadow-md">
+    <header class="shadow-sm">
       <div class="max-w-6xl mx-auto py-4 flex items-start justify-between xl:items-center z-50 bg-white">
         <div class="flex items-center space-x-10">
           <img
-            class='h-5 w-26' 
+            class='h-8 w-26' 
             src="/img/tinder.png" 
             alt="Logo"
           >
-          <p class='text-gray-accent'>About</p>
-          <p class='text-gray-accent'>Service</p>
-          <p class='text-gray-accent'>Source</p>
-          <p class='text-gray-accent'>Study Case</p>
+          <p class='text-gray-accent text-xl'>About</p>
+          <p class='text-gray-accent text-xl'>Service</p>
+          <p class='text-gray-accent text-xl'>Source</p>
+          <p class='text-gray-accent text-xl'>Study Case</p>
         </div>
         <div class="flex items-center space-x-10">
-          <p class='text-primary font-semibold'>Log In</p>
-          <button class="text-white bg-primary px-6 py-1 rounded-md">Contact</button>
+          <p class='text-primary text-xl font-semibold'>Log In</p>
+          <button class="text-white bg-primary text-xl px-6 py-2 rounded-md">Contact</button>
         </div>
       </div>
     </header> <!-- END HEADER SECTION -->
-
+    
     <main class='flex flex-col space-y-20'>
 
       <!-- HERO SECTION OF THE PAGE -->
-      <section id='hero' class='snap-start pt-28'>
-        <div class='max-w-6xl mx-auto flex flex-col space-y-10'>
+      <section id='hero' class='snap-start'>
+        <div class='max-w-6xl mx-auto flex flex-col space-y-10 mt-6'>
           <div class="flex items-center justify-between">
 
             <!-- HERO SECTION LEFT SIDE -->
@@ -67,10 +67,10 @@
 
             <!-- HERO SECTION RIGHT SIDE -->
             <div class="flex justify-center items-center">
-              <div class="relative h-[65vh] w-[30vw]">
+              <div class="relative h-[28rem] w-[26rem]">
                 <!-- DASHED DIV CODES -->
-                <div class="absolute -top-8 right-10 w-full h-full border-dashed border-2 
-                border-gray z-10 rounded-[2.5rem] -rotate-12"></div> <!-- DASHED DIV END -->
+                <div class="absolute -top-6 right-10 w-full h-full border-dashed border-2 
+                border-gray z-10 rounded-[2.5rem] -rotate-6"></div> <!-- DASHED DIV END -->
   
                 <!-- SHOES CARD START -->
                 <div class="absolute top-[4.5rem] -right-[6rem] p-2 bg-white z-20 shadow-2xl rounded-md">
@@ -160,7 +160,7 @@
 
           <!-- FEATURED SECTION -->
           <div class="flex items-center justify-between pt-8">
-            <p class="text-lg text-black font-medium leading-snug tracking-wide">
+            <p class="text-2xl text-black font-medium leading-snug tracking-wide">
               <span class="whitespace-nowrap">Trusted by</span><br>
               Top Companies
             </p>
@@ -304,7 +304,7 @@
             </p>
           </div>
           <div class='w-full flex items-end space-x-16'>
-            <div class="about-divs2 relative">
+            <div class="about-divs2 scale relative">
               <div class="grid place-content-center h-1/2 w-full p-2 second-bg rounded-2xl">
                 <p class="text-4xl text-accent text-left font-semibold capitalize">Populix</p>
               </div>
@@ -323,7 +323,7 @@
                 </p>
               </div>
             </div>
-            <div class="about-divs2 relative">
+            <div class="about-divs2 scale relative">
               <div class="grid place-content-center h-1/2 w-full p-2 primary-bg rounded-2xl">
                 <p class="text-4xl text-white text-left font-semibold capitalize">OCBC NISO</p>
               </div>
@@ -342,7 +342,7 @@
                 </p>
               </div>
             </div>
-            <div class="about-divs2 relative">
+            <div class="about-divs2 scale relative">
               <div class="grid place-content-center h-1/2 w-full p-2 second-bg rounded-2xl">
                 <p class="text-4xl text-accent text-left font-semibold capitalize">Prospeku</p>
               </div>
@@ -529,9 +529,78 @@
           </div>                          
         </div>
       </section> <!-- END HELP SECTION -->
-      <section>
-        Hello footer is comming
-      </section>
+
+      <!-- FOOTER SECTION -->
+      <footer id="footer" class="text-accent-black2">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-5 justify-items-start gap-2 py-4">
+            <div class="col-span-1 space-y-4">
+              <img
+                class='h-6 w-26' 
+                src="/img/tinder.png" 
+                alt="Logo"
+              >
+              <ul class="list-unstyled space-y-4">
+                <li>
+                  <p class="text-sm text-accent-black2 text-left leading-snug">
+                    <span class="whitespace-nowrap">An SEO company focus such as keyword</span><br>
+                    <span class="whitespace-nowrap">research, on-page optimization, link building,</span><br>
+                    <span class="whitespace-nowrap">and analytics tracking.</span><br>
+                  </p>
+                </li>
+                <li>
+                  <div class='flex items-center space-x-4'>
+                    <div class="grid place-content-center bg-accent h-6 w-6 rounded-full text-sm font-semibold">f</div>
+                    <div class="grid place-content-center bg-accent h-6 w-6 rounded-full text-sm font-semibold">t</div>
+                    <div class="grid place-content-center bg-accent h-6 w-6 rounded-full text-sm font-semibold">l</div>
+                    <div class="grid place-content-center bg-accent h-6 w-6 rounded-full text-sm font-semibold">i</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-span-1 space-y-4 px-14">
+              <h4>Column 2</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+            <div class="col-span-1">
+              <h4>Column 3</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+            <div class="col-span-1">
+              <h4>Column 4</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+            <div class="col-span-1">
+              <h4>Column 5</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-t border-black flex justify-between mt-4">
+            <div>
+              <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+            </div>
+            <div>
+              <span>&copy; 2023 Your Company Name</span>
+            </div>
+          </div>
+        </div>
+      </footer>  <!-- END HELP SECTION -->  
     </main>
   </body>
 
