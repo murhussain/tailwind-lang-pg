@@ -48,7 +48,9 @@ header.sticky {
   position: sticky;
   top: 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  opacity: 0.95;
 }
+
 
 section#hero + header.sticky {
   display: none;
