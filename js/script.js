@@ -13,3 +13,11 @@ accordionToggles.forEach(function(accordionToggle) {
     accordionContent.classList.toggle('active');
   });
 });
+
+/////////////////////////////////////////////////////////////////////////
+// Handle toggleDrawer on mobile screens and other sm or md screens
+
+function toggleDrawer() {
+  const drawer = document.getElementById("drawer");
+  drawer.classList.toggle("hidden");
+}
