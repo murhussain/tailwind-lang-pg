@@ -35,6 +35,25 @@
   color: #333;
 }
 
+/* HANDLING STICKY FUNCTIONALITY */
+header {
+  position: relative;
+}
+
+section#about {
+  margin-top: 50px;
+}
+
+header.sticky {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section#hero + header.sticky {
+  display: none;
+}
+
 /* ACCORDIAN TOGGLE STYLES */
 .accordion-toggle {
   transition: transform 0.2s ease-in-out;

@@ -21,3 +21,17 @@ function toggleDrawer() {
   const drawer = document.getElementById("drawer");
   drawer.classList.toggle("hidden");
 }
+
+/////////////////////////////////////////////////////////////////////////////
+// Handle sticker class to the header whenever scroll reaches about section
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('#header');
+  var heroSection = document.querySelector('#hero');
+  var aboutSection = document.querySelector('#about');
+
+  if (window.pageYOffset > aboutSection.offsetTop) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+});

@@ -10,12 +10,12 @@
 
     <title>Starch &mdash; SEO to everyone!</title>
   </head>
-  <body class="bg-white space-y-10 overflow-y-auto scrollbar scrollbar-thin
+  <body class="bg-white space-y-10 overflow-y-auto z-0 scrollbar scrollbar-thin
     scrollbar-thumb-accent scrollbar-track-[#e5e5e5] overflow-x-hidden"
   >
     <!-- HEADER SECTION OF THE PAGE -->
-    <header class="header py-1 md:py-2 lg:py-4 shadow-sm">
-      <nav class="lg:max-w-6xl mx-auto h-10 flex items-center justify-between xl:items-center z-50 bg-white">
+    <header id='header' class="bg-white py-1 md:py-2 lg:py-4 shadow-sm z-50">
+      <nav class="lg:max-w-6xl mx-auto h-10 flex items-center justify-between xl:items-center z-50">
         <img
           class='pl-2 h-6 w-26 lg:hidden' 
           src="/img/logo.png" 
@@ -43,7 +43,7 @@
     
       <!-- Drawer -->
       <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden" id="drawer">
-        <div class="bg-white h-screen w-64 flex flex-col space-y-6 divide-y">
+        <div class="bg-white h-screen w-64 flex flex-col space-y-6">
           <div class="flex justify-end pr-4 pt-4">
             <ion-icon class="icon-mobile-nav" name="close-outline" onclick="toggleDrawer()"></ion-icon>
           </div>
@@ -64,7 +64,6 @@
     </header> <!-- END HEADER SECTION -->
     
     <main class='flex flex-col space-y-20'>
-
       <!-- HERO SECTION OF THE PAGE -->
       <section id='hero' class='snap-start'>
         <div class='max-w-6xl mx-auto flex flex-col space-y-10 mt-6'>
