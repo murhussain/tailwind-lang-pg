@@ -10,7 +10,7 @@
 
     <title>Starch &mdash; SEO to everyone!</title>
   </head>
-  <body class="bg-white space-y-10 overflow-y-auto z-0 scrollbar scrollbar-thin
+  <body class="bg-white lg:space-y-10 overflow-y-auto z-0 scrollbar scrollbar-thin
     scrollbar-thumb-accent scrollbar-track-[#e5e5e5] overflow-x-hidden"
   >
     <!-- HEADER SECTION OF THE PAGE -->
@@ -66,26 +66,25 @@
     <main class='flex flex-col space-y-20'>
       <!-- HERO SECTION OF THE PAGE -->
       <section id='hero' class='snap-start'>
-        <div class='max-w-6xl mx-auto flex flex-col space-y-10 mt-6'>
-          <div class="flex items-center justify-between">
-
+        <div class='p-4 lg:p-0 lg:max-w-6xl mx-auto flex flex-col space-y-10 lg:mt-6'>
+          <div class="flex flex-col space-y-10 lg:flex-row lg:items-center justify-between">
             <!-- HERO SECTION LEFT SIDE -->
-            <div class="flex flex-col space-y-10">
-              <div class="space-y-1">
-                <p class="text-6xl tracking-wide capitalize font-semibold">Make your</p>
-                <p class="text-6xl tracking-wide text-primary capitalize font-semibold">SEO Campaign</p>
-                <p class="text-6xl tracking-wide capitalize font-semibold">Successful</p>
+            <div class="flex flex-col space-y-6 lg:space-y-10">
+              <div class="lg:space-y-1 text-left lg:text-left">
+                <p class="text-4xl lg:text-6xl tracking-wide capitalize font-semibold">Make your</p>
+                <p class="text-4xl lg:text-6xl tracking-wide text-primary capitalize font-semibold">SEO Campaign</p>
+                <p class="text-4xl lg:text-6xl tracking-wide capitalize font-semibold">Successful</p>
               </div>
-              <p class="text-lg text-accent-black2 leading-snug tracking-wide space-y-3">
+              <p class="hidden lg:block text-lg text-left text-accent-black2 leading-snug tracking-wide space-y-3">
                 <span class="whitespace-nowrap">Get organic traffic and high rankings with multi-team</span><br>
                 <span class="whitespace-nowrap">collaboration that will help you optimize on-page</span><br>
                 and off-page SEO.
               </p>
-              <div class="flex items-center space-x-10">
-                <button class="text-white bg-primary py-4 px-10 font-medium rounded-md">Try It Free</button>
-                <div class="space-y-1">
-                  <p class="text-xs text-gray-accent font-semibold">From 23k+ Reviews</p>
-                  <div class="mt-3 flex -space-x-2 overflow-hidden">
+              <div class="flex items-center justify-between lg:space-x-10">
+                <button class="text-white bg-primary py-2 lg:py-4 px-6 lg:px-10 font-medium rounded-md">Try It Free</button>
+                <div class="lg:space-y-1">
+                  <p class="hidden lg:block text-xs text-gray-accent font-semibold">From 23k+ Reviews</p>
+                  <div class="lg:mt-3 flex -space-x-2 overflow-hidden">
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
@@ -101,13 +100,13 @@
 
             <!-- HERO SECTION RIGHT SIDE -->
             <div class="flex justify-center items-center">
-              <div class="relative h-[28rem] w-[26rem]">
+              <div class="relative h-[24rem] w-full lg:h-[28rem] lg:w-[26rem]">
                 <!-- DASHED DIV CODES -->
-                <div class="absolute -top-[1.3rem] right-10 w-full h-full border-dashed border-2 
-                border-gray z-10 rounded-[2.5rem] -rotate-6"></div> <!-- DASHED DIV END -->
+                <div class="absolute -top-[1rem] lg:-top-[1.3rem] right-4 lg:right-10 w-[93%] h-full border-dashed border-2 
+                border-gray z-10 rounded-[1.8rem] lg:rounded-[2.5rem] -rotate-3 lg:-rotate-6"></div> <!-- DASHED DIV END -->
   
                 <!-- SHOES CARD START -->
-                <div class="absolute top-[4rem] -right-[5rem] p-2 bg-white z-20 shadow-2xl rounded-md">
+                <div class="hidden lg:block absolute top-[4rem] -right-[5rem] p-2 bg-white z-20 shadow-2xl rounded-md">
                   <div class='flex flex-col space-y-2'>
                     <div class="flex items-center space-x-2">
                       <div class="-space-y-1">
@@ -133,7 +132,7 @@
                 </div><!-- SHOES CARD END -->
                 
                 <!-- CHART CARD SECTION CODES -->
-                <div class="absolute top-[83%] right-12 p-2 bg-white z-20 shadow-xl rounded-md">
+                <div class="hidden lg:block absolute top-[83%] right-12 p-2 bg-white z-20 shadow-xl rounded-md">
                   <div class='flex flex-col space-y-2'>
                     <div class="flex items-center space-x-6">
                       <div class="-space-y-1">
@@ -159,7 +158,7 @@
                 </div> <!-- CHART CARD END -->
   
                 <!-- SEARCH ENGINE CARD -->
-                <div class="absolute top-[8rem] -left-[8rem] p-2 bg-white z-20 shadow-xl rounded-md">
+                <div class="hidden lg:block absolute top-[8rem] -left-[8rem] p-2 bg-white z-20 shadow-xl rounded-md">
                   <div class='flex flex-col space-y-2'>
                     <div class="flex items-center space-x-6">
                       <div class="-space-y-1">
@@ -185,7 +184,7 @@
                   </div>
                 </div> <!-- SEARCH ENGINE END -->
                 <!-- DIV WITH IMAGE -->
-                <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-body to-accent-body  rounded-[2.5rem] z-10">
+                <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-body to-accent-body  rounded-[1.8rem] lg:rounded-[2.5rem] z-10">
                   <img src="/img/hero1.png" alt="Your image" class="w-full h-full object-fill">
                 </div> <!-- END OF DIV WITH IMAGE -->
               </div>
