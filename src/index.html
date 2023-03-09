@@ -4,28 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-  </head>
-  <body class="bg-white snap-y snap-mandatory space-y-10 overflow-y-scroll overflow-x-hidden">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="/js/script.js"></script>
 
+    <title>Starch &mdash; SEO to everyone!</title>
+  </head>
+  <body class="bg-white snap-y snap-mandatory space-y-10 overflow-y-auto scrollbar scrollbar-thin
+    scrollbar-thumb-accent scrollbar-track-[#e5e5e5] overflow-x-hidden"
+  >
     <!-- HEADER SECTION OF THE PAGE -->
     <header class="shadow-sm">
-      <div class="max-w-6xl mx-auto py-4 flex items-start justify-between xl:items-center z-50 bg-white">
+      <nav class="max-w-6xl mx-auto py-4 flex items-start justify-between xl:items-center z-50 bg-white">
         <div class="flex items-center space-x-10">
           <img
             class='h-8 w-26' 
             src="/img/tinder.png" 
             alt="Logo"
           >
-          <p class='text-gray-accent text-xl'>About</p>
-          <p class='text-gray-accent text-xl'>Service</p>
-          <p class='text-gray-accent text-xl'>Source</p>
-          <p class='text-gray-accent text-xl'>Study Case</p>
+          <div class='hidden md:inline-flex'>
+            <p class='text-gray-accent text-xl'>About</p>
+            <p class='text-gray-accent text-xl'>Service</p>
+            <p class='text-gray-accent text-xl'>Source</p>
+            <p class='text-gray-accent text-xl'>Study Case</p>
+          </div>
         </div>
         <div class="flex items-center space-x-10">
-          <p class='text-primary text-xl font-semibold'>Log In</p>
-          <button class="text-white bg-primary text-xl px-6 py-2 rounded-md">Contact</button>
+          <div class='hidden md:inline-flex'>
+            <p class='text-primary text-xl font-semibold'>Log In</p>
+            <button class="text-white bg-primary text-xl px-6 py-2 rounded-md">Contact</button>
+          </div>
+          <div class="md:hidden btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </div>
         </div>
-      </div>
+      </nav>
     </header> <!-- END HEADER SECTION -->
     
     <main class='flex flex-col space-y-20'>
@@ -607,19 +621,4 @@
       </footer>  <!-- END HELP SECTION -->  
     </main>
   </body>
-
-
-  <script>
-    // Get all the accordion toggle buttons and add a click event listener to each one
-    var accordionToggles = document.querySelectorAll('.accordion-toggle');
-    accordionToggles.forEach(function(accordionToggle) {
-      accordionToggle.addEventListener('click', function() {
-        // Toggle the active class on the accordion toggle button
-        this.classList.toggle('active');
-        // Get the next sibling of the accordion header (which is the accordion content) and toggle the active class on it
-        var accordionContent = this.parentElement.nextElementSibling;
-        accordionContent.classList.toggle('active');
-      });
-    });
-  </script>
 </html>
