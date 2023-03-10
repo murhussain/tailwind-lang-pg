@@ -845,6 +845,10 @@ video {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -879,6 +883,10 @@ video {
 
 .justify-items-start {
   justify-items: start;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-2 {
@@ -1082,6 +1090,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1665,6 +1678,10 @@ section#hero + header.sticky {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:inline-flex {
     display: inline-flex;
   }
@@ -1681,8 +1698,16 @@ section#hero + header.sticky {
     height: 28rem;
   }
 
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
   .lg\:w-\[26rem\] {
     width: 26rem;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
   }
 
   .lg\:max-w-6xl {
@@ -1696,6 +1721,14 @@ section#hero + header.sticky {
   .lg\:-rotate-6 {
     --tw-rotate: -6deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -1716,6 +1749,14 @@ section#hero + header.sticky {
 
   .lg\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .lg\:justify-items-start {
+    justify-items: start;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 
   .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1764,6 +1805,18 @@ section#hero + header.sticky {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:rounded-\[2\.5rem\] {
@@ -1830,6 +1883,11 @@ section#hero + header.sticky {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
