@@ -14,7 +14,7 @@
   }
 
   .about-divs2 {
-    @apply h-[22rem] w-[28.7%] bg-white rounded-2xl flex flex-col space-y-8
+    @apply h-[22rem] w-[85%] lg:w-[28.7%] bg-white rounded-2xl flex flex-col space-y-8
   }
 
   .scale {
