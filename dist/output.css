@@ -528,7 +528,6 @@ video {
 .about-divs {
   display: flex;
   height: 16rem;
-  width: 80%;
   flex-direction: column;
 }
 
@@ -546,12 +545,6 @@ video {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-@media (min-width: 1024px) {
-  .about-divs {
-    width: 30%;
-  }
 }
 
 .about-divs2 {
@@ -841,6 +834,10 @@ video {
   place-content: center;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -859,6 +856,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .-space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1151,6 +1152,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pl-14 {
@@ -1554,10 +1565,6 @@ section#hero + header.sticky {
   border-radius: 1rem;
 }
 
-.hover\:border-t-0:hover {
-  border-top-width: 0px;
-}
-
 .hover\:border-b-0:hover {
   border-bottom-width: 0px;
 }
@@ -1570,11 +1577,6 @@ section#hero + header.sticky {
 .hover\:px-4:hover {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.hover\:py-6:hover {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .hover\:py-4:hover {
@@ -1604,84 +1606,28 @@ section#hero + header.sticky {
     height: 16rem;
   }
 
-  .sm\:h-\[18rem\] {
-    height: 18rem;
-  }
-
-  .sm\:h-\[1rem\] {
-    height: 1rem;
-  }
-
-  .sm\:h-6 {
-    height: 1.5rem;
-  }
-
-  .sm\:h-10 {
-    height: 2.5rem;
+  .sm\:h-\[2rem\] {
+    height: 2rem;
   }
 
   .sm\:w-1\/2 {
     width: 50%;
   }
 
-  .sm\:w-\[20rem\] {
-    width: 20rem;
+  .sm\:w-24 {
+    width: 6rem;
   }
 
   .sm\:w-\[18rem\] {
     width: 18rem;
   }
 
-  .sm\:w-4 {
-    width: 1rem;
-  }
-
-  .sm\:w-10 {
-    width: 2.5rem;
-  }
-
-  .sm\:w-14 {
-    width: 3.5rem;
-  }
-
-  .sm\:w-16 {
-    width: 4rem;
-  }
-
-  .sm\:w-20 {
-    width: 5rem;
-  }
-
-  .sm\:w-24 {
-    width: 6rem;
-  }
-
-  .sm\:max-w-3xl {
-    max-width: 48rem;
-  }
-
-  .sm\:max-w-6xl {
-    max-width: 72rem;
-  }
-
-  .sm\:max-w-lg {
-    max-width: 32rem;
+  .sm\:w-\[80\%\] {
+    width: 80%;
   }
 
   .sm\:max-w-xl {
     max-width: 36rem;
-  }
-
-  .sm\:max-w-2xl {
-    max-width: 42rem;
-  }
-
-  .sm\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .sm\:snap-center {
-    scroll-snap-align: center;
   }
 
   .sm\:grid-cols-2 {
@@ -1714,12 +1660,6 @@ section#hero + header.sticky {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-
   .sm\:rounded-\[1\.8rem\] {
     border-radius: 1.8rem;
   }
@@ -1728,24 +1668,9 @@ section#hero + header.sticky {
     padding: 2.5rem;
   }
 
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .sm\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .sm\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .sm\:py-6 {
@@ -1757,24 +1682,19 @@ section#hero + header.sticky {
     padding-right: 1rem;
   }
 
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
+  .sm\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .sm\:shadow-sm {
@@ -1787,6 +1707,10 @@ section#hero + header.sticky {
 @media (min-width: 768px) {
   .md\:w-28 {
     width: 7rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:py-2 {
@@ -1841,10 +1765,6 @@ section#hero + header.sticky {
     height: 28rem;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:w-10 {
     width: 2.5rem;
   }
@@ -1866,6 +1786,10 @@ section#hero + header.sticky {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -1878,20 +1802,8 @@ section#hero + header.sticky {
     align-items: flex-end;
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
-  .lg\:items-stretch {
-    align-items: stretch;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-  .lg\:justify-evenly {
-    justify-content: space-evenly;
   }
 
   .lg\:justify-items-start {
@@ -1918,12 +1830,6 @@ section#hero + header.sticky {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .lg\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -2005,6 +1911,11 @@ section#hero + header.sticky {
     padding-bottom: 1.5rem;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -2038,10 +1949,6 @@ section#hero + header.sticky {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .group:hover .lg\:group-hover\:inline-flex {
-    display: inline-flex;
   }
 
   .lg\:hover\:py-6:hover {
