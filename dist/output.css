@@ -1645,6 +1645,11 @@ section#hero + header.sticky {
     padding-right: 5rem;
   }
 
+  .sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .sm\:pr-4 {
     padding-right: 1rem;
   }
@@ -1657,6 +1662,11 @@ section#hero + header.sticky {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:shadow-sm {
