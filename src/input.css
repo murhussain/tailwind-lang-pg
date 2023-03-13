@@ -10,7 +10,7 @@
   }
 
   .about-divs {
-    @apply h-64 p-8 bg-white rounded-2xl flex flex-col space-y-5 shadow-md
+    @apply h-64 sm-[18rem] p-8 bg-white rounded-2xl flex flex-col space-y-5 shadow-md
   }
 
   .about-divs2 {
