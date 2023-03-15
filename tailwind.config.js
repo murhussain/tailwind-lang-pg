@@ -19,6 +19,7 @@ module.exports = {
         // Dark color pallette
         'd-bg': '#0d1116',
         'd-bg-accent': '#161C23',
+        'd-card': '#2d3339',
         'd-body': '#f9edea',
         'd-accent-body': '#ecc9c0',
         'd-white': '#e6e6e6',

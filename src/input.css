@@ -20,6 +20,10 @@
   .scale {
     @apply hover:scale-y-110 hover:shadow-md transition-all duration-150 ease-out
   }
+
+  .featured {
+    @apply sm:h-5 lg:h-8 brightness-0 dark:backdrop-brightness-125 dark:brightness-50 opacity-50 dark:opacity-90
+  }
 }
 
 /* Light theme styles */
@@ -35,11 +39,11 @@ body {
 }
 
 
-.featured {
+/* .featured {
   height: 2rem;
   filter: brightness(0);
   opacity: 50%;
-}
+} */
 
 /* MOBILE */
 .icon-mobile-nav {
