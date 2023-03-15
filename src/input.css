@@ -22,6 +22,19 @@
   }
 }
 
+/* Light theme styles */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark theme styles */
+.dark-mode body {
+  background-color: #130804;
+  color: #fff;
+}
+
+
 .featured {
   height: 2rem;
   filter: brightness(0);

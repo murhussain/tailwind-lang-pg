@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
+        // Light color pallette
         'body': '#f9edea',
         'accent-body': '#ecc9c0',
         'black': '#0d0103',
@@ -13,6 +15,16 @@ module.exports = {
         'gray-accent': '#989898',
         'primary': '#bf4c2c',
         'accent': '#cc7056',
+
+        // Dark color pallette
+        'd-bg': '#0d1116',
+        'd-bg-accent': '#161C23',
+        'd-body': '#f9edea',
+        'd-accent-body': '#ecc9c0',
+        'd-white': '#e6e6e6',
+        'd-accent-white': '#989898',
+        'd-primary': '#bf4c2c',
+        'd-accent': '#cc7056',
       }
     },
   },

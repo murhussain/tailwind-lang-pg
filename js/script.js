@@ -35,3 +35,24 @@ window.addEventListener('scroll', function() {
     header.classList.remove('sticky');
   }
 });
+
+
+
+/////////////////////////////////////////////////////////////
+// Handle switching between dark and light mode on the page
+function toggleDarkMode() {
+  const htmlElement = document.documentElement;
+  const isDark = htmlElement.classList.contains('dark');
+  const sunIcon = document.querySelector('#ico-sun');
+  const moonIcon = document.querySelector('#ico-moon');
+
+  if (isDark) {
+    htmlElement.classList.remove('dark');
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+  } else {
+    htmlElement.classList.add('dark');
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+  }
+}

@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html class="dark" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,11 @@
 
     <title>Starch &mdash; SEO to everyone!</title>
   </head>
-  <body class="bg-white overflow-y-auto z-0 scrollbar scrollbar-thin
+  <body class="bg-white dark:bg-d-bg overflow-y-auto z-0 scrollbar scrollbar-thin
     scrollbar-thumb-accent scrollbar-track-[#e5e5e5] overflow-x-hidden"
   >
     <!-- HEADER SECTION OF THE PAGE -->
-    <header id='header' class="bg-white py-1 lg:px-10 md:py-2 lg:py-4 shadow-sm z-50">
+    <header id='header' class="bg-white dark:bg-d-bg-accent py-1 lg:px-10 md:py-2 lg:py-4 shadow-sm z-50">
       <nav class="lg:max-w-6xl mx-auto h-10 flex items-center justify-between xl:items-center z-50">
         <img
           class='pl-4 sm:pl-4 md:pl-10 h-6 w-26 lg:hidden' 
@@ -71,16 +71,16 @@
             <!-- HERO SECTION LEFT SIDE -->
             <div class="flex flex-col space-y-6 lg:space-y-10">
               <div class="lg:space-y-1 text-left lg:text-left">
-                <p class="text-4xl lg:text-6xl tracking-wide capitalize font-semibold">Make your</p>
+                <p class="text-black dark:text-white text-4xl lg:text-6xl tracking-wide capitalize font-semibold">Make your</p>
                 <p class="text-4xl lg:text-6xl tracking-wide text-primary capitalize font-semibold">SEO Campaign</p>
-                <p class="text-4xl lg:text-6xl tracking-wide capitalize font-semibold">Successful</p>
+                <p class="text-black dark:text-white text-4xl lg:text-6xl tracking-wide capitalize font-semibold">Successful</p>
               </div>
-              <p class="hidden xl:block text-lg text-left text-accent-black2 leading-snug tracking-wide space-y-3">
+              <p class="hidden xl:block text-lg text-left text-accent-black2 dark:text-d-accent-white leading-snug tracking-wide space-y-3">
                 <span class="whitespace-nowrap">Get organic traffic and high rankings with multi-team</span><br>
                 <span class="whitespace-nowrap">collaboration that will help you optimize on-page</span><br>
                 <span class="whitespace-nowrap">and off-page SEO.</span><br>
               </p>
-              <p class="hidden md:block xl:hidden md:text-base lg:text-lg text-left text-accent-black2 tracking-wide lg:space-y-2">
+              <p class="hidden md:block xl:hidden md:text-base lg:text-lg text-left text-accent-black2 dark:text-d-accent-white  tracking-wide lg:space-y-2">
                 Get organic traffic and high rankings with multi-team
                 collaboration that will help you optimize on-page
                 and off-page SEO.
@@ -88,7 +88,7 @@
               <div class="flex items-center space-x-10 sm:space-x-4 md:space-x-6 lg:space-x-10">
                 <button class="text-white bg-primary py-2 lg:py-4 px-6 lg:px-10 font-medium rounded-md">Try It Free</button>
                 <div class="lg:space-y-1">
-                  <p class="hidden lg:block text-xs text-gray-accent font-semibold">From 23k+ Reviews</p>
+                  <p class="hidden lg:block text-xs text-gray-accent dark:text-d-white font-semibold">From 23k+ Reviews</p>
                   <div class="lg:mt-3 flex -space-x-2 overflow-hidden">
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
@@ -211,7 +211,7 @@
       </section> <!-- END HERO SECTION -->
 
       <!-- ABOUT SECTION -->
-      <section id='about' class='sm:px-10 lg:px-10 snap-center'>
+      <section id='about' class='bg:white sm:px-10 lg:px-10 snap-center'>
         <div class='bg-gradient-to-r from-body to-[#f4f4f4] py-10 lg:max-w-6xl mx-auto flex flex-col 
           space-y-6 lg:space-y-14 lg:p-10 sm:rounded-[1.8rem] lg:rounded-[2.5rem]'
         >
@@ -611,11 +611,19 @@
         <div class="lg:max-w-6xl mx-auto">
           <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 lg:justify-items-start lg:gap-2 lg:py-4">
             <div class="space-y-6">
-              <img
-                class='h-6 w-26' 
-                src="/img/logo.png" 
-                alt="Logo"
-              >
+              <div class="flex items-center justify-between">
+                <img
+                  class='h-6 w-26' 
+                  src="/img/logo.png" 
+                  alt="Logo"
+                >
+                <button onclick="toggleDarkMode()" class="flex items-center rounded-full px-2 py-1 bg-blue-300 
+                  dark:bg-blue-700"
+                >
+                  <ion-icon id="ico-sun" class="h-4 w-4 text-yellow-500 dark:text-gray-400" name="moon-outline"></ion-icon>
+                  <ion-icon id="ico-moon" class="h-4 w-4 text-red-400 dark:text-white ml-2" name="sunny-outline"></ion-icon>
+                </button>
+              </div>
               <ul class="list-unstyled space-y-4 lg:space-y-6">
                 <li>
                   <p class="hidden lg:block text-sm text-accent-black2 text-left leading-snug">
@@ -635,6 +643,14 @@
                     <div class="grid place-content-center text-white bg-accent h-6 lg:h-10 w-6 lg:w-10 rounded-full text-lg lg:text-xl font-semibold">i</div>
                   </div>
                 </li>
+                <!-- <li>
+                  <button onclick="toggleDarkMode()" class="flex items-center rounded-full p-2 bg-blue-300 
+                  dark:bg-blue-700"
+                  >
+                    <ion-icon class="h-4 w-4 text-yellow-500 dark:text-gray-400" name="moon-outline"></ion-icon>
+                    <ion-icon class="h-4 w-4 text-red-400 dark:text-white ml-2" name="sunny-outline"></ion-icon>
+                  </button>
+                </li> -->
               </ul>
             </div>
             <div class="hidden sm:block col-span-1 space-y-4 px-14 lg:10">
