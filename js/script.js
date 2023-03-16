@@ -37,7 +37,6 @@ window.addEventListener('scroll', function() {
 });
 
 
-
 /////////////////////////////////////////////////////////////
 // Handle switching between dark and light mode on the page
 function toggleDarkMode() {
