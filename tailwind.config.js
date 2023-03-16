@@ -22,7 +22,7 @@ module.exports = {
         'd-card': '#2d3339',
         'd-body': '#8b8e91',
         'd-accent-body': '#45494f',
-        'd-white': '#e6e6e6',
+        'd-white': '#d1d1d1',
         'd-accent-white': '#989898',
       }
     },
