@@ -14,7 +14,7 @@
     scrollbar-thumb-accent scrollbar-track-[#e5e5e5] overflow-x-hidden"
   >
     <!-- HEADER SECTION OF THE PAGE -->
-    <header id='header' class="bg-white dark:bg-d-bg-accent py-1 lg:px-10 md:py-2 lg:py-4 shadow-sm z-50">
+    <header id='header' class="bg-white dark:bg-d-bg-accent py-1 lg:px-10 md:py-2 lg:py-2 shadow-sm z-50">
       <nav class="lg:max-w-6xl mx-auto h-10 flex items-center justify-between xl:items-center z-50">
         <img
           class='pl-4 sm:pl-4 md:pl-10 h-6 w-26 lg:hidden' 
@@ -34,18 +34,22 @@
         </div>
         <div class="hidden lg:inline-flex items-center space-x-10">
           <p class='text-primary text-xl font-semibold'>Log In</p>
-          <button class="text-white bg-primary text-xl px-6 py-2 rounded-md">Contact</button>
+          <button class="text-white bg-primary text-xl px-6 py-1 rounded-md">Contact</button>
         </div>
         <div class="pr-4 sm:pr-4 md:pr-10 lg:hidden btn-mobile-nav">
-          <ion-icon class="icon-mobile-nav -mr-[5px]" name="menu-outline" onclick="toggleDrawer()"></ion-icon>
+          <ion-icon class="h-10 w-10 text-accent-black dark:text-d-accent-white -mr-[5px]" 
+            name="menu-outline" onclick="toggleDrawer()"
+          ></ion-icon>
         </div>
       </nav>
     
       <!-- Drawer -->
       <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden" id="drawer">
-        <div class="bg-white h-screen w-64 md:w-80 flex flex-col space-y-6">
+        <div class="bg-white dark:bg-d-bg-accent h-screen overflow-y-auto scrollbar-hide w-64 md:w-80 flex flex-col space-y-6">
           <div class="flex justify-end pr-4 pt-4">
-            <ion-icon class="icon-mobile-nav" name="close-outline" onclick="toggleDrawer()"></ion-icon>
+            <ion-icon class="h-10 w-10 text-accent-black dark:text-d-accent-white" 
+              name="close-outline" onclick="toggleDrawer()"
+            ></ion-icon>
           </div>
           <div class='grid place-content-center'>
             <div class="flex flex-col items-center space-y-6 py-8">
@@ -86,7 +90,7 @@
                 and off-page SEO.
               </p>
               <div class="flex items-center space-x-10 sm:space-x-4 md:space-x-6 lg:space-x-10">
-                <button class="text-white bg-primary py-2 lg:py-4 px-6 lg:px-10 font-medium rounded-md">Try It Free</button>
+                <button class="text-xl text-white bg-primary py-2 lg:py-4 px-6 lg:px-10 font-medium rounded-md">Try It Free</button>
                 <div class="lg:space-y-1">
                   <p class="hidden lg:block text-xs text-gray-accent dark:text-d-white font-semibold">From 23k+ Reviews</p>
                   <div class="lg:mt-3 flex -space-x-2 overflow-hidden">
@@ -199,7 +203,7 @@
           </div>
 
           <!-- FEATURED SECTION -->
-          <div class="hidden sm:inline-flex space-y-0 items-center justify-between pt-8">
+          <div id='featured' class="hidden sm:inline-flex space-y-0 items-center justify-between pt-8">
             <p class="sm:text-lg lg:text-2xl text-black dark:text-d-white font-medium leading-snug tracking-wide">
               <span class="whitespace-nowrap">Trusted by</span><br>
               <span class="whitespace-nowrap">Top Companies</span><br>
