@@ -45,11 +45,50 @@ function toggleDarkMode() {
 
   if (isDark) {
     htmlElement.classList.remove('dark');
-    sunIcon.style.display = 'block';
-    moonIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+    sunIcon.style.display = 'none';
+    localStorage.setItem('mode', 'light');
   } else {
     htmlElement.classList.add('dark');
-    sunIcon.style.display = 'none';
-    moonIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+    sunIcon.style.display = 'block';
+    localStorage.setItem('mode', 'dark');
   }
 }
+
+const sunIcon = document.querySelector('#ico-sun');
+const moonIcon = document.querySelector('#ico-moon');
+let mode = localStorage.getItem('mode');
+
+if (!mode) {
+  // If the user hasn't set a preference yet, set the initial mode to "light".
+  mode = 'light';
+  localStorage.setItem('mode', 'light');
+}
+
+// Apply the user's preferred color mode to the page content
+document.addEventListener('DOMContentLoaded', function() {
+  if (mode === 'dark') {
+    toggleDarkMode();
+  }
+  // Show the content now that the color mode has been applied
+  document.body.style.visibility = 'visible';
+});
+
+// Set the initial display of the moon and sun icons based on the user's preferred color mode
+if (mode === 'dark') {
+  moonIcon.style.display = 'none';
+  sunIcon.style.display = 'block';
+} else {
+  moonIcon.style.display = 'block';
+  sunIcon.style.display = 'none';
+}
+
+sunIcon.addEventListener('click', () => {
+  const isDark = document.documentElement.classList.contains('dark');
+  if (isDark) {
+    toggleDarkMode();
+  }
+});
+
+sunIcon.addEventListener('click', toggleDarkMode);

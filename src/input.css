@@ -28,21 +28,15 @@
 
 /* Light theme styles */
 body {
-  background-color: #fff;
-  color: #333;
+  /* background-color: #fff;
+  color: #333; */
+  visibility: hidden;
 }
 
 /* Dark theme styles */
-.dark-mode body {
+/* .dark-mode body {
   background-color: #130804;
   color: #fff;
-}
-
-/* MOBILE */
-/* .icon-mobile-nav {
-  height: 2.5rem;
-  width: 2.5rem;
-  color: #333;
 } */
 
 /* HANDLING STICKY FUNCTIONALITY */
