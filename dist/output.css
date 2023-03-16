@@ -1656,6 +1656,11 @@ section#hero + header.sticky {
   border-color: rgb(152 152 152 / var(--tw-border-opacity));
 }
 
+.dark .dark\:bg-\[\#5c6065\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 96 101 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -1717,6 +1722,11 @@ section#hero + header.sticky {
 .dark .dark\:ring-d-bg {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(13 17 22 / var(--tw-ring-opacity));
+}
+
+.dark .dark\:hover\:bg-\[\#5c6065\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 96 101 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
