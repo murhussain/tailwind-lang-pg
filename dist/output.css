@@ -1670,6 +1670,11 @@ section#hero + header.sticky {
   border-color: rgb(209 209 209 / var(--tw-border-opacity));
 }
 
+.dark .dark\:border-accent-black2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 93 93 / var(--tw-border-opacity));
+}
+
 .dark .dark\:bg-\[\#5c6065\] {
   --tw-bg-opacity: 1;
   background-color: rgb(92 96 101 / var(--tw-bg-opacity));
